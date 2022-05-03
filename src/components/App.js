@@ -44,7 +44,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route
             path="/threatened"
-            element={<Threatened 
+            element={
+              <Threatened 
               animals={animalsToDisplay} 
               onSearch={setSearchTerm}
               />}

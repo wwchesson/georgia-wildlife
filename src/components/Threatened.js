@@ -7,7 +7,7 @@ function Threatened({ animals, onSearch }) {
     (animal) => animal.threatened === true
   );
 
-  return (
+    return (
     <div className="animal-container">
       <SearchBar onSearch={onSearch} />
       <AnimalTiles>
@@ -19,7 +19,6 @@ function Threatened({ animals, onSearch }) {
               </H3>
               <IMG src={animal.image} alt="animal"></IMG>
             </div>
-    
           </Card>
         ))}
       </AnimalTiles>
