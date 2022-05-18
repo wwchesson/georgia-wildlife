@@ -21,6 +21,7 @@ function AnimalContainer({ animals, onSearch }) {
   return (
     <div className="animal-container">
       <SearchBar onSearch={onSearch} />
+
       <div className="animal-filter">
         <H3>
           <strong>Filter by animal class</strong>
@@ -41,10 +42,7 @@ function AnimalContainer({ animals, onSearch }) {
 
       <AnimalTiles>
         {animalsToDisplay.map((animal) => (
-          <Animal
-            key={animal.id}
-            animal={animal}
-          />
+          <Animal key={animal.id} animal={animal} />
         ))}
       </AnimalTiles>
     </div>

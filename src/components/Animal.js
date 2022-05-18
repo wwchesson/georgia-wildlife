@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, IMG, H3 } from "./StyleElements";
 
-function Animal({ animal }) {
+function Animal({ animal, increment }) {
   const { name, image, nombre } = animal;
   const [showSpanish, setShowSpanish] = useState(false);
 

@@ -10,9 +10,9 @@ import NewAnimalForm from "./NewAnimalForm";
 function App() {
   const [animals, setAnimals] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  
+
   useEffect(() => {
-    fetch("http://localhost:3001/animals")
+    fetch("https://georgia-wildlife.herokuapp.com/animals")
       .then((r) => r.json())
       .then((data) => {
         setAnimals(data);
@@ -34,21 +34,21 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route
             path="/animals"
-            element={<AnimalsContainer 
-              animals={animalsToDisplay} 
-              onSearch={setSearchTerm}
-              />}
+            element={
+              <AnimalsContainer
+                animals={animalsToDisplay}
+                onSearch={setSearchTerm}
+              />
+            }
           />
-          <Route path="/" element={<Home />} />
           <Route
             path="/threatened"
             element={
-              <Threatened 
-              animals={animalsToDisplay} 
-              onSearch={setSearchTerm}
-              />}
+              <Threatened animals={animalsToDisplay} onSearch={setSearchTerm} />
+            }
           />
           <Route
             path="/newanimal"

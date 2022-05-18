@@ -5,7 +5,7 @@ function Home() {
   const [homePhoto, setHomePhoto] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/photos")
+    fetch("https://georgia-wildlife.herokuapp.com/photos")
       .then((r) => r.json())
       .then((photo) => {
         setHomePhoto(photo);
