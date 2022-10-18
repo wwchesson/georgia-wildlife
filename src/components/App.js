@@ -29,7 +29,6 @@ function App() {
     setAnimals([...animals, newAnimal]);
   }
 
-  //commit
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
