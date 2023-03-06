@@ -12,7 +12,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("https://georgia-wildlife.herokuapp.com/animals")
+    fetch("https://gawildlifebackend.onrender.com/animals")
       .then((r) => r.json())
       .then((data) => {
         setAnimals(data);
