@@ -2,7 +2,7 @@
 
 ### Summary
 
-<img src="./wildlife.gif" alt="sampleLiveApp" height="500">
+<img src="./wildlife.gif" alt="sampleLiveApp" height="400" />
 
 This app was built for my 3-year-old son who loves animals. Instead of showcasing his favorite animals from all over the world, I wanted him to explore the animals in his own backyard.
 
